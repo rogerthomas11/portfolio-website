@@ -4,62 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio - Roger Thomas</title>
-    <style>
-        #nav-links ul {
-            text-align: right;
-        }
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <body>
+        <div class="nav">
+          <a href=#home>Home</a>
+          <a href=#about>About</a>
+          <a href=#contact>Contact</a>
+        </div>
 
-        #nav-links li {
-            display: inline-block;
-        }
-
-        .link {
-            color: green;
-            text-decoration: none;
-        }
-
-        p {
-            text-indent: 50px;
-            padding: 25px;   
-        }
-
-        #nav-links li:not(:last-of-type) {
-            margin-right: 15px;
-        }
-    </style>
-</head>
-<body>
-    <nav id="nav-links">
-        <ul>
-           <li><a href="https://wwww.google.com" class="link">Goes to Google</a></li>
-           <li><a href="#" class="link">Contact</a></li>
-        </ul>
-       
-    </nav>
-    <h1>Roger Thomas</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Iure in saepe at nisi eum autem harum quibusdam delectus.
-        Minus cum temporibus quam quaerat soluta, ea nemo nostrum 
-        officiis hic consectetur!
-    </p>
-    <ol>
-        <li>Some ordered list item</li>
-        <li>Some ordered list item</li>
-        <li>Some ordered list item</li>
-    </ol>
-    <ul>
-        <li>Some ordered list item</li>
-        <li>Some ordered list item</li>
-        <li>Some ordered list item</li>
-    </ul>
-    <div>
-        <div>Left Side</div>
-        <div>Right Side</div>
-    </div>
-    <img src="https://avatars0.githubusercontent.com/u/65933741?s=460&u=fe19a5af330852edc04b75309f37a3c67537199e&v=4">
-    <input type="text">
-    <input type="color">
-    <textarea></textarea>
-</body>
+        <div class="row">
+          <div class="column">
+          <h1>Roger Thomas</h1>
+          <p>I am a creative person who loves to learn. I have always been drawn to everything creative. 
+             From taking endless photography and art classes in school, to being a traveling musician and 
+             learning the ins and outs of audio production. I first fell in love with web development while 
+             trying to make a website for an early band of mine on a free website builder. I was fascinated 
+             with how web applications are programmed and built from the ground up. I'm very new to this but 
+             I'm excited to learn and grow. I can't wait for what the future holds for me in this industry.</p>
+            <button id="resume"><a href="images/Resume-copy.pdf" target="_blank">View My Resume</a></button>
+        </div>
+          
+         <div class="column">
+           <img class="bio-picture" src="images/IMG_0267.JPG" alt="Photo of art supplies">
+          </div>
+        </div> 
+      </body>
 </html>
