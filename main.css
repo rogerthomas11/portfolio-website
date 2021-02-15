@@ -1,73 +1,152 @@
+/* css for navbar*/
 .nav {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center; 
-    background-color: #3d85c6;
-    padding: 20px;
+    justify-content: flex-end;
+    background-color:;
+    padding: 0.25em;
+    border-bottom: #66FCF1 solid;
   }
   .nav a {
     text-decoration: none;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
-    /* font-family: arial, serif; */
-    color: #F0F5F4;
-    padding: 15px 100px 15px 100px;
+    font-size: 1.5625em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #66FCF1;
+    padding: 0.9375em 1.5em 0.9375em 1.5em;
   }
   
   .nav a:hover {
-    color: #666666;
+    color: #45A29E;
     transition-duration: 0.5s;
   } 
   
   body {
-    background-color: #F5F5F5;
+    background-color: #1F2833;
   }
   
-  .column {
-    flex: 50%;
-    color: #666666;
-    text-align: center;
-    font-size: 20px;
-  }
-  
+  /* hompage css*/
   .row {
     display: flex;
-    padding-top: 50px;
+    padding: 7.125em 6.125em;
+  }
 
+  .column {
+    width: 50%;
+    text-align: center;
   }
   
   .column h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #424242;
+    color: #66FCF1;
   }
   
+  .column p {
+    color: #c5c6c7;
+    text-align: center;
+    font-size: 1.25em;
+  }
+
   #resume {
-    background-color: #F5F5F5;
-    margin: 10px 10px;
-    padding: 8px 10px;
-    font-size: 15px;
-    border: 2px solid #3d85c6;
-    border-radius: 5px;
+    background-color: #1F2833;
+    margin: 0.625em 0.625em;
+    padding: 0.5em 0.625em;
+    font-size: 0.9375em;
+    border: 0.135em solid #66FCF1;
+    border-radius: 1.25em;
     cursor: pointer;
   }
   
   #resume a{
     text-decoration: none;
-    color: #424242;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #66fcf1;
   }
-  
+
+  #resume a:hover{
+    text-decoration: none;
+    color:#1F2833;
+  }
+
   #resume:hover {
-    background-color: #3d85c6;
+    background-color: #66FCF1;
     transition-duration: 0.4s;
-    color: #F5F5F5;
   }
   img {
-    display: float;
-    float: right;
-    height: 500px;
-    width: auto;
-    padding: 50px 80px;
-    border-radius: 10px;
+    border-radius: 5%;
+    height: 30em;
+    width: 30em;
+  }
+
+
+  /* begining of css for "Resume" page */
+  .resume-row {
+    display: flex;
+    padding: 5.125em 6.125em;
+  }
+
+  .resume-column {
+    width: 50%;
+    padding: 0 3em;
+  }
+
+  .resume-column em {
+    color: #c5c6c7;;
+  }
+  .contact {
+    list-style-type: none;
+    padding: 0.5em 0;
+  }
+  .contact i {
+    padding-right: 0.5em;
+  }
+  .resume-column {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #66FCF1;
+  }
+  .resume-column p {
+    color: #c5c6c7;
+    font-size: 1.25em;
+  }
+  .resume-column li {
+    color: #c5c6c7;
+    font-size: 1.25em;
   }
   
+  .company .job-title{
+    display:
+  }
+  
+  .resume-title li {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+
+
+  /*Footer styles*/
+
+  .social-links {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .social-links ul {
+    display: flex;
+    justify-content: center;
+  }
+  .social-links ul li {
+    display: inline;
+    vertical-align: top;
+    margin-right: 1em;
+    font-size: 1.875em;
+    padding: 0.65em;
+    text-decoration: none;
+  }
+  .social-links i {
+    color: #66FCF1;
+  }
+   .social-links li:hover {
+    background-color: #0B0C10;
+    transition-duration: 0.5s;
+    border-radius: 50%
+  }
