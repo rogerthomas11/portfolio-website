@@ -2,28 +2,31 @@
 .nav {
     display: flex;
     justify-content: flex-end;
-    background-color:;
     padding: 0.25em;
-    border-bottom: #66FCF1 solid;
+    /*border-bottom: #00458B solid;*/
   }
   .nav a {
     text-decoration: none;
     font-size: 1.5625em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #66FCF1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #17252A;
     padding: 0.9375em 1.5em 0.9375em 1.5em;
   }
   
   .nav a:hover {
-    color: #45A29E;
+    color: #2B7A78;
     transition-duration: 0.5s;
   } 
   
-  body {
-    background-color: #1F2833;
-  }
+
   
   /* hompage css*/
+  body {
+    background-color: #3AAFA9;
+  }
+
   .row {
     display: flex;
     padding: 7.125em 6.125em;
@@ -36,46 +39,55 @@
   
   .column h1 {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #66FCF1;
+    font-size: 3.4375em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #17252A;
   }
   
   .column p {
-    color: #c5c6c7;
+    color: #DEF2F1;
     text-align: center;
     font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
 
   #resume {
-    background-color: #1F2833;
-    margin: 0.625em 0.625em;
+    background-color: #17252A;
+    margin: 0.5em 0.5em;
     padding: 0.5em 0.625em;
     font-size: 0.9375em;
-    border: 0.135em solid #66FCF1;
+    border: 0.135em solid #17252A;
     border-radius: 1.25em;
     cursor: pointer;
+    box-shadow: 0.625em  0.3125em  0.3125em #2B7A78;
   }
   
   #resume a{
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
     font-size: 1em;
-    color: #66fcf1;
+    color: #DEF2F1;
   }
 
   #resume a:hover{
     text-decoration: none;
-    color:#1F2833;
+    color: #17252A;
   }
 
   #resume:hover {
-    background-color: #66FCF1;
+    background-color: #2B7A78;
     transition-duration: 0.4s;
   }
   img {
     border-radius: 5%;
     height: 30em;
     width: 30em;
+    box-shadow: 0.9375em 0.9375em 0.46875em #2B7A78;
   }
 
 
@@ -91,40 +103,102 @@
   }
 
   .resume-column em {
-    color: #c5c6c7;;
+    color: #17252A;
   }
   .contact {
     list-style-type: none;
     padding: 0.5em 0;
   }
   .contact i {
+    color: #DEF2F1;
     padding-right: 0.5em;
   }
   .resume-column {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #66FCF1;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #17252A;
   }
-  .resume-column p {
-    color: #c5c6c7;
+
+  .resume-title h1 {
+    font-size: 3.25em;
+    font-weight: 700;
+  }
+
+  .resume-column h2 {
+    font-size: 2em;
+  }
+
+  .resume-column h3 {
+    font-size: 1.50em;
+  }
+
+  .resume-column h4 {
     font-size: 1.25em;
+  }
+
+  .resume-column p {
+    color: #DEF2F1;
+    font-size: 1.15em;
+    font-weight: 300;
   }
   .resume-column li {
-    color: #c5c6c7;
-    font-size: 1.25em;
+    color: #DEF2F1;
+    font-size: 1.15em;
+    font-weight: 300;
   }
   
-  .company .job-title{
-    display:
+
+  /*css for contact page*/
+
+  .contact-row {
+    display: flex;
+    padding: 5.125em 6.125em;
   }
-  
-  .resume-title li {
-    font-size: 1em;
-    padding: 0.5em;
+
+  .contact-column {
+    width: 50%;
+    padding: 0 3em;
   }
 
+  .contact-title h1{
+    color: #17252A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.25em;
+    font-weight: 700;
+    font-style: italic;
+  }
 
+  .elem-group label {
+    color: #17252A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.50em;
+  }
+  .elem-group input, textarea {
+    margin: 1.5em auto;
+  }
 
-  /*Footer styles*/
+  #submit {
+    color: #DEF2F1;
+    background-color: #17252A;
+    margin: 0.5em 0.5em;
+    padding: 0.5em 0.625em;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9375em;
+    border: 0.135em solid #17252A;
+    border-radius: 1.25em;
+    cursor: pointer;
+    box-shadow: 0.625em  0.3125em  0.3125em #2B7A78;
+  }
+
+  #submit:hover {
+    background-color: #2B7A78;
+    transition-duration: 0.4s;
+  }
+
+  /*css for footer*/
 
   .social-links {
     padding-top: 1em;
@@ -143,10 +217,10 @@
     text-decoration: none;
   }
   .social-links i {
-    color: #66FCF1;
+    color: #17252A;
   }
    .social-links li:hover {
-    background-color: #0B0C10;
+    background-color: #DEF2F1;
     transition-duration: 0.5s;
     border-radius: 50%
   }
