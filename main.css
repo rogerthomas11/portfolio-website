@@ -2,7 +2,7 @@
 .nav {
     display: flex;
     justify-content: flex-end;
-    padding: 0.25em;
+    margin: 0.25em;
     /*border-bottom: #00458B solid;*/
   }
   .nav a {
@@ -12,7 +12,7 @@
     font-weight: 400;
     font-style: italic;
     color: #17252A;
-    padding: 0.9375em 1.5em 0.9375em 1.5em;
+    margin: 0.9375em 1.5em 0.9375em 1.5em;
   }
   
   .nav a:hover {
@@ -29,17 +29,22 @@
 
   .row {
     display: flex;
-    padding: 7.125em 6.125em;
+    padding: 0 2.125em;
   }
 
   .column {
     width: 50%;
     text-align: center;
+    padding: 0 3em;
   }
   
-  .column h1 {
+  .page-title {
+    display: flex;
+    width: 50%;
     text-align: center;
-    font-size: 3.4375em;
+    margin-top: 1em;
+    padding-left: 2.125em;
+    font-size: 2.25em;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -76,30 +81,46 @@
 
   #resume a:hover{
     text-decoration: none;
-    color: #17252A;
+    color: #DEF2F1;
   }
 
   #resume:hover {
-    background-color: #2B7A78;
+    /*background-color: #2B7A78;*/
+    opacity: 0.6;
     transition-duration: 0.4s;
   }
-  img {
+  .bio-picture {
     border-radius: 5%;
     height: 30em;
     width: 30em;
     box-shadow: 0.9375em 0.9375em 0.46875em #2B7A78;
+    margin-top: 0.65em;
   }
 
 
   /* begining of css for "Resume" page */
+  .resume-title {
+    display: flex;
+    width: 50%;
+    padding-left: 3.125em;
+    margin-top: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.625em;
+    font-weight: 700;
+  }
+
   .resume-row {
     display: flex;
-    padding: 5.125em 6.125em;
+    padding: 0 2.125em;
   }
 
   .resume-column {
     width: 50%;
     padding: 0 3em;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #17252A;
   }
 
   .resume-column em {
@@ -107,21 +128,10 @@
   }
   .contact {
     list-style-type: none;
-    padding: 0.5em 0;
   }
   .contact i {
     color: #DEF2F1;
     padding-right: 0.5em;
-  }
-  .resume-column {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    color: #17252A;
-  }
-
-  .resume-title h1 {
-    font-size: 3.25em;
-    font-weight: 700;
   }
 
   .resume-column h2 {
@@ -149,33 +159,45 @@
   
 
   /*css for contact page*/
-
   .contact-row {
     display: flex;
-    padding: 5.125em 6.125em;
+    padding: 0 2.125em;
   }
 
   .contact-column {
     width: 50%;
     padding: 0 3em;
-  }
+  } 
 
-  .contact-title h1{
+  .contact-title {
     color: #17252A;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.25em;
+    font-size: 1.8em;
     font-weight: 700;
     font-style: italic;
+    margin-top: 2em;
+  }
+  
+  .contact-column p {
+    font-family: 'Roboto', sans-serif;
+    color: #DEF2F1;
+    font-size: 1.15em;
+    font-weight: 300;
+    margin-bottom: 2em;
   }
 
   .elem-group label {
     color: #17252A;
     font-family: 'Roboto', sans-serif;
+    font-style: italic;
     font-weight: 400;
     font-size: 1.50em;
   }
   .elem-group input, textarea {
     margin: 1.5em auto;
+    color: #17252A;
+    font-family: 'Roboto', sans-serif;
+    
   }
 
   #submit {
@@ -199,7 +221,6 @@
   }
 
   /*css for footer*/
-
   .social-links {
     padding-top: 1em;
     padding-bottom: 1em;
